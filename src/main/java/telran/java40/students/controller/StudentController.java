@@ -53,7 +53,7 @@ public class StudentController {
 	}
 	
 	@GetMapping("/students/name/{name}")
-	public List<StudentDto> findStudentsByName(String name) {
+	public List<StudentDto> findStudentsByName(@PathVariable String name) {
 		return studentService.findStudentsByName(name);
 	}
 	
